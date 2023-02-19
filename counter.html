@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            position:relative;
+            top: 150px;
+            text-align: center;
+            background-image: linear-gradient(orange,yellow,yellowgreen);
+        }
+        button{
+            border-radius: 50px;
+            background-color: aquamarine;
+            padding:50px 50px 50px 50px ;
+            font-size: 100px;
+        }
+        div{
+            font-size: 50px;
+            border:black solid;
+            background-color:aquamarine;
+            margin: 40px 200px 40px 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="1">y</div>
+    <button onclick="inc()">increment</button>
+    <button onclick="dec()">decreament</button>
+</body>
+<script>
+    var count=0
+    function inc(){
+        document.getElementById("1").innerHTML=count++
+        setTimeout(inc,1000)
+    }
+    function dec(){
+        document.getElementById("1").innerHTML=count--
+        setTimeout(dec,1000)
+    }
+</script>
+</html>
